@@ -1,0 +1,627 @@
+html {
+scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Rokkitt', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #020;
+    background-size: cover;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/*Container*/
+.container {
+    width: 100%;
+    max-width: 1430px;
+    margin: 0 auto;
+    padding:0 15px;
+}
+
+/*intro*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../images/trava1.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+/*заголовок*/
+.intro__title {
+    color: #020;
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top: 100px;
+}
+/*полоска под заголовком*/
+.intro__title:after {
+    content: "";
+    display: block;
+    width: 400px;
+    height: 3px;
+    margin: 20px auto 100px;
+    background-color:  #fff;
+}
+
+.for__what {
+    color: #020;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    font-family: "Raleway";
+    margin-bottom: 25px;
+
+}
+
+/*header*/
+.header, .footer {
+    display: flex;
+    background-color: #708D00;
+    color: #fff;
+    padding: 0px 15px 0px 15px;
+    width: 100%;
+    position: sticky;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header {
+    top: 0;
+}
+
+.footer {
+    bottom: 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*логотип*/
+.header__logo{
+    font-size: 25px;
+    font-weight: 700;
+    color: #020;
+}
+
+/*nav*/
+.nav {
+    font-size: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+/*ссылки*/
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    position: relative;
+    color:#020;
+    text-decoration:solid;
+    transition: color 0.2s linear;
+}
+
+/*полоски под ссылками в правом верхнем углу*/
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+/*изменение цвета слова и полоски снизу при наводе мышкой*/
+.nav__link:hover {
+    color: #fff;
+}
+.nav__link:hover:after {
+    display: block;
+}
+/*курсор при наводе на ссылки в хэдере*/
+.headerButton {
+    cursor: pointer;
+}
+
+/*кнопка*/
+
+.btn {
+    display: inline-block;
+    padding: 8px 30px;
+    border: 3px solid #020;
+    font-size: 18px;
+    font-weight: 700;
+    color: #020;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .1s linear, color .1s linear;
+}
+/*изменение цвета слова при наводе мышкой*/
+.btn:hover {
+    background-color: #fff;
+    color: #020;
+}
+/*footer*/
+.footer {
+    
+    background: #708D00;
+    -webkit-background-size: cover;
+    background-size: cover; ;
+}
+
+.line{
+    background-color: #708D00;
+    height:20px;
+    width:100%;
+    display:flex;
+    margin-top: 50px;
+}
+
+/*2 страница описание приложения*/
+.section {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 100%;
+    background: #fff;
+    height: 7000px;
+}
+.containerr {
+    width: 100%;
+    max-width: 1430px;
+    margin: 0 auto;
+    height: 7000px;
+}
+
+
+.section__header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0px auto 40px;
+   
+}
+
+.section__title {
+    text-align: center;
+    font-size: 50px;
+    color: #020;
+    font-family: 'Rokkitt', serif;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+
+
+.section__suptitle {
+    text-align: center;
+    font-size: 24px;
+    color: #020;
+    font-family: 'Raleway', cursive;
+    margin-bottom: 10px;
+}
+/*menu*/
+/*убрать все отступы*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*убрать весь цвет и иконки*/
+#nav{
+	height: 70px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 3000px;
+}
+#nav ul{
+	list-style: none;
+}
+/*сделать горизонтальным*/
+#nav > ul > li{
+	float: left;
+	width: 210px;
+	position: relative;
+}
+/*добавить цвета*/
+#nav li a{
+	display: block;
+	background-color: #708D00;
+	border: 1px solid #020;
+	color: #020;
+	padding: 8px;
+	text-align: center;
+	text-decoration: none;
+}
+#nav li a:hover{
+    color: #fff;
+}
+
+/*прячем вложенные списки*/
+#nav li .second{
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+/*выпадение подпунктов*/
+#nav li:hover .second{
+	display: block;
+}
+
+#nav li li{
+	width: 210px;
+}
+/*описание приложения 2 секция*/
+.description {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 100%;
+    background: #fff;
+    height: 100vh;
+}
+
+/*для заголовков*/
+.description__header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+}
+/*заголовки*/
+.description__title {
+    text-align: center;
+    font-size: 28px;
+    color: #020;
+    font-family: 'Raleway', cursive;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+
+/*для текстов*/
+.main__text {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*сами текста*/
+.textt {
+    text-align: center;
+    font-size: 23px;
+    color: #020;
+    font-family: 'Raleway';
+    
+}
+/*если текст и 1 фото*/
+.main__item {
+    width: 50%;
+    
+}
+/*подзаголовки*/
+.suptitle__LeftMenu {
+    text-align: center;
+    font-size: 25px;
+    color: #020;
+    font-family: "Raleway";
+    padding-bottom: 40px;
+}
+
+/*для 3 фоток*/
+.img {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1430px;
+}
+/*3 фотки*/
+.main__itt {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media  (max-width: 1300px) {
+    /*header*/
+    .nav {
+        font-size: 19px;
+    }
+    /*intro*/ 
+    .intro__title {
+        font-size: 90px;
+    }
+    
+    .for__what {
+        font-size: 18px;
+    }
+    .for__what2 {
+        font-size: 18px;
+    }
+    .intro__title:after{
+        width: 380px;
+    }
+    .btn {
+        font-size: 17px;
+    }
+    /*section*/
+    .section__title {
+        font-size: 48px;
+    }
+    .section__suptitle {
+        font-size: 22px;
+    }
+    .textt {
+        font-size: 19px;
+    }
+    
+}
+
+@media  (max-width: 1100px) {
+    /*header*/
+    .nav {
+        font-size: 18px;
+    }
+     /*intro*/ 
+     .intro__title {
+        font-size: 80px;
+    }
+    
+    .for__what {
+        font-size: 15px;
+    }
+    .for__what2 {
+        font-size: 15px;
+    }
+    .intro__title:after{
+        width: 350px;
+    }
+    .btn {
+        font-size: 16px;
+    }
+    /*section*/
+    .section__title {
+        font-size: 40px;
+    }
+    .description__title {
+        font-size: 27px;
+    }
+    .textt {
+        font-size: 18px;
+    }
+    .main__item {
+        width: 100%;
+        text-align: center;
+    }
+    .main__itt {
+        width: 100%;
+    }
+    .section {
+        height: 7400px;
+    }
+    .containerr {
+        height: 7400px;
+    }
+    #nav {
+        margin-bottom: 3300px;
+    }
+
+}
+@media  (max-width: 900px){
+    /*header*/
+    .nav {
+        font-size: 17px;
+    }
+    /*intro*/
+    #nav > ul > li{
+        float:none;
+        width: 210px;
+        position: relative;
+    }
+    #nav {
+        margin-bottom: 3200px;
+    }
+
+   
+}
+@media  (max-width: 800px) {
+    /*header*/
+    .nav {
+        font-size: 15px;
+    }
+    /*intro*/ 
+    .intro__title {
+       font-size: 70px;
+   }
+   .for__what {
+       font-size: 13px;
+   }
+   .for__what2 {
+        font-size: 13px;
+    }
+   .intro__title:after{
+    width: 300px;
+    }
+    .btn {
+        font-size: 15px;
+    }
+    /*section*/
+    .section__title {
+        font-size: 35px;
+    }
+    .description__title {
+        font-size: 25px;
+    }
+    .suptitle__LeftMenu {
+        font-size: 22px;
+    }
+}
+
+@media  (max-width: 650px) {
+    /*header*/
+    .nav {
+        font-size: 14px;
+    }
+    /*intro*/ 
+    .intro__title {
+       font-size: 60px;
+   }
+   
+   .for__what {
+       font-size: 11px;
+   }
+   .for__what2 {
+        font-size: 11px;
+    }
+   .intro__title:after{
+    width: 250px;
+    }
+    .btn {
+        font-size: 14px;
+    }
+    /*section*/
+    .section__title {
+        font-size: 30px;
+        padding-bottom: -1000px;
+    }
+    .description__title {
+        font-size: 22px;
+    }
+    .textt {
+        font-size: 14px;
+        
+    }
+    .suptitle__LeftMenu {
+        font-size: 20px;
+    }
+
+}
+ @media  (max-width: 470px){
+    /*section*/
+     .section {
+        height: 7200px;
+    }
+    .containerr{
+        height: 7200px;
+    }
+}
+@media  (max-width: 450px) {
+    /*header*/
+    .nav {
+        font-size: 12px;
+    }
+    /*intro*/ 
+    .intro__title {
+       font-size: 50px;
+   }
+   
+   .for__what {
+       font-size: 9px;
+   }
+   .for__what2 {
+        font-size: 9px;
+    }
+   .intro__title:after{
+        width: 200px;
+   }
+   .btn {
+    font-size: 13px;
+    }
+    /*section*/
+    .section {
+        height: 7000px;
+    }
+    .containerr {
+        height: 7000px;
+    }
+    .section__title {
+        font-size: 25px;
+    }
+    .n {
+        display: block;
+    }
+    .description__title {
+        font-size: 19px;
+    }
+    .textt {
+        font-size: 11px;
+    }
+    #nav {
+        margin-bottom: 3100px;
+    }
+    .suptitle__LeftMenu {
+        font-size: 17px;
+    }
+}
+@media  (max-width: 340px) {
+    /*header*/
+    .nav {
+        font-size: 10px;
+    }
+    /*intro*/ 
+    .intro__title {
+       font-size: 30px;
+   }
+   
+   .for__what {
+       font-size: 7px;
+   }
+   .for__what2 {
+        font-size: 7px;
+    }
+   .intro__title:after{
+        width: 150px;
+   }
+   .btn {
+    font-size: 11px;
+    }
+    /*section*/
+    .section__title {
+        font-size: 20px;
+    }
+    .section__suptitle {
+        font-size: 17px;
+    }
+    .description__title {
+        font-size: 15px;
+    }
+    .textt {
+        font-size: 9px;
+    }
+    .suptitle__LeftMenu {
+        font-size: 15px;
+    }
+    /*2 section*/
+    .for__what2 {
+        font-size: 12px;
+    }
+}
