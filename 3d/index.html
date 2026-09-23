@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>3Д проекты</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>3Д проекты</h1>
+        <div class="subhead">Нажмите на карточку, чтобы увидеть подробности</div>
+
+        <!-- Фильтры -->
+        <div class="filters" id="filters"></div>
+
+        <!-- Сетка карточек -->
+        <div class="cards-grid" id="cardsGrid"></div>
+    </div>
+
+    <!-- Модальное окно -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Закрыть">×</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Информация</h4>
+                <ul>
+                    <li>О нас</li>
+                    <li>Вакансии</li>
+                    <li>Партнёрам</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Помощь</h4>
+                <ul>
+                    <li>Доставка</li>
+                    <li>Оплата</li>
+                    <li>Возврат</li>
+                    <li>Поддержка</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <ul>
+                    <li>+7 (999) 123-45-67</li>
+                    <li>info@market.ru</li>
+                    <li>Москва, ул. Тверская, 1</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 Воронов Никита Рустамович
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
